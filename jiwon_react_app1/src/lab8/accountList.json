@@ -1,0 +1,30 @@
+{
+    "accountList" : [
+        {
+            "accountNum" : 1,
+            "id" : "zxck5",
+            "pw" : 1234,
+            "name" : "jiwon"
+        },
+        {
+            "accountNum" : 2,
+            "id" : "zxck6",
+            "pw" : 1235,
+            "name" : "jiwon2"
+        },
+        {
+            "accountNum" : 3,
+            "id" : "zxck7",
+            "pw": 1236,
+            "name" : "jiwon3"
+        },
+        {
+            "accountNum" : 4,
+            "id" : "zxck8",
+            "pw" : 1237,
+            "name" : "jiwon4"
+        }
+
+    ]
+}
+
