@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+    <script>
+        fetch('https://reqres.in/api/users') /// putting url to fetch
+        .then(function(res) // res is Response
+            {   
+                console.log(res);
+                return(res.json()); 
+            })
+        .then(function(data)
+            {console.log(data);})
+        .catch(function(error){
+            alert(error);
+        })
+    </script>
+</html>

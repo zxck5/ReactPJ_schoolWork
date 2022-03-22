@@ -1,0 +1,132 @@
+
+header {
+   height: 200px;
+    display: flex;
+    justify-content:space-between;
+
+}
+header > .header_flexbox1 {
+    height: 200px; width: 300px;
+}
+.header_flexbox1 .lang {
+    height: 20px; width: 300px; margin-top: 180px; margin-left: 150px;
+}
+
+
+header > .header_flexbox2 {
+    height: 200px; width: 600px; 
+}
+.header_flexbox2 >.img1 {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+
+header > .header_flexbox3 {
+    height: 200px; width: 300px; 
+    
+    
+   
+}
+.header_flexbox3 > .logo {
+    margin-top: 150px;
+    margin-left: 50px;
+    width: 300px; height: 50px;
+}
+.header_flexbox3 > .logo a {
+    text-decoration: none;
+    color: gray;
+}
+
+nav { height: 50px; background-color:lightseagreen}
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 10px;
+    
+}
+nav ul li {
+    line-height: 2.5; margin: 0 60px;
+}
+nav ul li > a{
+    text-decoration: none;
+    color: white;
+}
+main { height: 700px;}
+
+
+
+
+.footer{
+    background-color: #2F323A;
+    padding: 70px 0;
+}
+.row{
+    display: flex;
+    flex-wrap:wrap;
+}
+.footer-col{
+    width:50%;
+    padding: 10 30px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom:30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing:border-box;
+    width: 50px;
+}
+
+.footer-col ul li {
+    color:#bbbbbb;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color:#9D9D9D;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left: 10px;
+}
+
+.copy_right{
+    color:#9D9D9D;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*you may use this class to add more effects.*/
+.text-align-center {
+    text-align: center;
+}
+
+
+

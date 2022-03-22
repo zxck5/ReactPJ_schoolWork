@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShoppingMall</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../CSS/common.css">
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script src="../js/Funnel.js"></script>
+        <style>
+
+
+            #Product .Mainproduce_form{
+                margin-top:10px;
+                margin-bottom:10px;
+                margin-left: 50px;
+                margin-right: 50px;
+            }
+
+            #Product .Mainproduce_img{
+                padding:15px;
+                background-color: white;
+                float: left;
+                border-right:1px solid black;
+                max-width:50%;
+                width:auto;
+            }
+
+            #Product #img {
+                max-width:430px;
+                max-height:662px;
+                height: auto;
+                width: auto\9; /* ie8 */
+            }
+            #Product #btn_left {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                width: 50px;
+                height: 40px;
+                border: 1px solid skyblue;
+                background-color: rgba(0,0,0,0);
+                color: skyblue; padding: 5px;
+                
+
+            }
+            #Product #btn_right {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                width: 50px;
+                height: 40px;
+                border: 1px solid skyblue;
+                background-color: rgba(0,0,0,0);
+                color: skyblue; padding: 5px;
+            }
+
+
+            #Product .produce_discrption{
+                padding-top: 30px;
+                padding-left: 30px;
+                width:50%;
+                float: left;
+            }
+
+           
+
+            #Product .produce_discrption h2{
+                font-size: 30px;
+                color: #808080;
+                font-weight: bold;
+            }
+
+            #Product .Mainproduct_price{
+                margin-top: 10px;
+                font-size: 25px;
+                font-weight: bold;
+                color: black;
+                
+            }
+
+            #Product .colour_label{
+                margin-top: 20px;
+                font-size: 15px;
+
+            }
+
+            #Product .colourselectionbox{
+                margin-top: 10px;
+                border-radius: 4px ;
+                border-color: #eaeaea;
+                background-color: #eaeaea;
+                width: 50%;
+                height: 30px;
+                display: flex;
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+            #Product .Mainproduct_quatity{
+                margin-top: 20px;
+
+            }
+
+            #Product .Mainproduct_quatity>input{
+                margin-top: 10px;
+                background-color: #eaeaea;
+                width: 50%;
+                height: 30px;
+                font-size: 15px;
+                display: flex;
+                padding-left: 10px;
+            }
+           
+            #Product .AddToCart{
+                background-color: #99A799;
+                border-width: 0;
+                color: white;
+                font-size: 14px;
+                width: 50%;
+                list-style: none;
+                padding: 10px 12px;
+                text-align: center;
+            }
+
+            #Product .produce_discrption h4{
+                margin-top: 30px;
+                font-size: 20px;
+                color: #808080;
+            }
+
+            #Product .produce_discrption p{
+                margin-top: 20px;
+                font-size: 15px;
+                color: #808080;
+            }
+
+            #Product .produce_discrption table{
+                margin-top: 20px;
+                font-size: 15px;
+                color: #808080;
+                border-collapse: collapse;
+                margin: 25px 0;
+                font-size: 0.9em;
+                min-width: 400px;
+            }
+
+            #Product .produce_discrption th{
+                padding: 8px;
+                text-align: center;
+            }
+
+            #Product .produce_discrption td{
+                padding: 8px;
+                text-align: center;
+            }
+           
+
+            #Product .relatedproduce{
+                clear:both;
+                background-color: white;
+                height: 30%;
+            }
+            #Product .relatedproduce>h3{
+                margin-top:10px;
+                margin-bottom:10px;
+                margin-left: 100px;
+                font-size: 30px;
+                color: #99A799;
+                display: flex;
+                justify-content: center;
+                text-shadow: 2px 1px 3px black;
+                text-align:center;
+                font-weight: bold;
+            }
+
+            #Product .relatedproduce_list{
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 10px;
+                margin-left: 200px;
+                margin-bottom: 10px;
+                font-size: 15px;
+ 
+            }
+
+            #Product a{
+                text-decoration: none;
+            }
+
+            #Product .relatedproduce_list>article{
+                margin-top: 50px;
+                width: 300px;
+                margin: 30px;
+                text-align:center;
+                
+            }
+            #Product .relatedproduce_name{
+                margin-top: 10px;
+                color: #595959;
+            }
+            #Product .relatedproduce_price{
+                color: #595959;
+            } 
+            #Product .relatedproduce_color{
+                color: #595959;
+            }
+            
+        </style>
+    </head>
+    <body id="Product">
+        <header>
+            
+            <div class="header_flexbox1">
+                <!-- <div class="lang">
+                    
+                   <select name="language">
+                       <option value="English" selected>English</option>
+                   </select>
+                
+                </div> -->
+
+            </div>
+            <div class="header_flexbox2">
+                <div class="img1">
+                    <a href="Mainpage.html"><img src="..\picture\logo.jpg" ></a>
+                </div>
+            </div>
+            <div class="header_flexbox3">
+                <div class="logo">
+                    <a href="login.html">
+                        <img src="..\picture\user-circle-regular-36.png" alt="loginIcon" height="30px">
+                        <span class="links_name">Login</span>
+                    </a>
+        
+                    <a href="shoppingCart.html">
+                        <img src="..\picture\cart-regular-36.png" alt="shoppingIcon" height="30px">
+                        <span class="links_name">Shopping Cart</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Mainpage.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        
+        <article>
+            
+            <form class="Mainproduce_form" name="FunnelNeckCapeWoolSweater" method="get" action="ShoppingCart.html">
+                <fieldset>
+
+                    <div class="Mainproduce_img">
+                        <button id="btn_left" class="ch" type="button">left</button>
+                        <img class="ch" src="../picture/FunnelNeckCapeWoolSweater_mocha_1.jpg" alt="FunnelNeckCapeWoolSweater" id="img" width="430px" height="644px">
+                        <button id="btn_right" class="ch" type="button">right</button>
+                        <!-- <img src="..\picture\FunnelNeckCapeWoolSweater_mocha_2.jpg" alt="FunnelNeckCapeWoolSweater" id="img">
+                        <img src="..\picture\FunnelNeckCapeWoolSweater_ivory_1.jpg" alt="FunnelNeckCapeWoolSweater" id="img">
+                        <img src="..\picture\FunnelNeckCapeWoolSweater_ivory_2.jpg" alt="FunnelNeckCapeWoolSweater" id="img"> -->
+                    </div>
+
+
+
+                    <div class="produce_discrption">
+                     
+                        <h2 id="title1">Funnel Neck Cape Wool Sweater</h2>
+                        <div id="price_tag" class="Mainproduct_price">$168</div>
+
+                        <div class="colour_label"><label for="colour">Colour</label></div>
+                        <select id = "sel_id1" class="colourselectionbox">
+                            <option class="opt_h" value="mocha">mocha</option>
+                            <option class="opt_h" value="ivory">ivory</option>
+                            <option class="opt_df" style="display: none;" value="default">default</option>
+                        </select>
+
+                        <div class="Mainproduct_quatity">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" name="quantity" id="quantity" min="1" max="10" value="1">
+                        </div>
+
+                        <br>
+                    
+
+                        <br>
+                        <input type="submit" name="AddToCart" value="ADD To CART" class="AddToCart">
+
+
+                        <h4>DESCRIPTION</h4>
+                        <p>Made in Korea</p>
+                        <p>wool 60%, nylon 30%, cashmere 10%</p>
+        
+                        <table border="1">
+                            <tr>
+                                <th>Cheat</th>
+                                <th>Shoulder</th>
+                                <th>Length</th>
+                                <th>Sleeve</th>
+                            </tr>
+                            <tr>
+                                <td>73 cm</td>
+                                <td>57 cm</td>
+                                <td>50-59 cm</td>
+                                <td>53 cm</td>
+                            </tr>
+                        </table>
+
+                        
+                    </div>
+
+                </fieldset>
+            </form>
+
+            
+        </article>
+
+        <div class="relatedproduce">
+            <h3>Related Products</h3>
+            <div class="relatedproduce_list">
+                <article>
+                    <a href="Product_FunnelNeckCapeWoolSweater.html">
+                    <img src="..\picture\FunnelNeckCapeWoolSweater_ivory_1.jpg" alt="FunnelNeckCapeWoolSweater" width="215"; height="331";>
+                    <div class="relatedproduce_name">Funnel Neck Cape Wool Sweater</div>
+                    <div class="relatedproduce_price">$378</div>
+                    <div class="relatedproduce_color">2 Colours</div>
+                    </a>
+                </article>
+                <article>
+                    <a href="Product_FunnelNeckCapeWoolSweater.html">
+                    <img src="..\picture\ScubaComfySuitPants_white_1.jpg" alt="ScubaComfySuitPants" width="215"; height="331";>
+                    <div class="relatedproduce_name">Scuba Comfy Suit Pants</div>
+                    <div class="relatedproduce_price">$138</div>
+                    <div class="relatedproduce_color">2 Colours</div>
+                    </a>
+                </article>
+                <article>
+                    <a href="Product_FunnelNeckCapeWoolSweater.html">
+                    <img src="..\picture\BasicCottonPlainTee_White_1.jpg" alt="BasicCottonPlainTee" width="215"; height="331";>
+                    <div class="relatedproduce_name">Basic Cotton Plain Tee</div>
+                    <div class="relatedproduce_price">$148</div>
+                    <div class="relatedproduce_color">2 Colours</div>
+                    </a>
+                </article>
+                <article>
+                    <a href="Product_FunnelNeckCapeWoolSweater.html">
+                    <img src="..\picture\FunnelNeckCapeWoolSweater_mocha_1.jpg" alt="FunnelNeckCapeWoolSweater" width="215"; height="331";>
+                    <div class="relatedproduce_name">Funnel Neck Cape Wool Sweater</div>
+                    <div class="relatedproduce_price">$168</div>
+                    <div class="relatedproduce_color">2 Colours</div>
+                    </a>
+                </article>
+            </div>
+        </div>
+
+                
+     
+            
+        <!--footer-->
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>Tel: +123 456 1234</li>
+                            <li>Email: info@dressedtothenight.com</li>
+                            <li><address>220 Yonge St. Toronto Canada</address></li>
+                            <li>Opening Hours : 10 am - 8 pm (Everyday)</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="Contact_Us.html">Contact</a></li>
+                            <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right">Privacy Policy | Terms and Conditions | 2018&copy;DressedToTheNines</div>
+        </footer>
+    </body>
+</html>

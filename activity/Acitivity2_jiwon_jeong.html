@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script>
+            const car = {
+                carObj : [
+                    {
+                        Plateno : "ABX123",
+                        Make : "Toyota",
+                        Model : "Corolla",
+                        Price : 23000
+                    },
+                    {
+                        Plateno : "NMP432",
+                        Make : "Mazda",
+                        Model : "III",
+                        Price : 32000
+                    },
+                    {
+                        Plateno : "PAK988",
+                        Make : "Honda",
+                        Model : "Civic",
+                        Price : 19500
+                    }
+                ]
+            }
+            for (var i = 0; i < car.carObj.length; i++) {
+                console.log(car.carObj[i]);
+            }
+
+            for (var i = 0; i < car.carObj.length; i++) {
+                var jsonData = JSON.stringify(car.carObj[i]);
+                document.write(jsonData);
+                document.write("<br>");
+            }
+            document.write("<br><br>")
+            for (var i = 0; i < car.carObj.length; i++) {
+                document.write("Plateno :" + car.carObj[i].Plateno+"<br> Make : "+car.carObj[i].Make + "<br> Model : " + car.carObj[i].Model + "<br> Price: " + car.carObj[i].Price);
+                document.write("<br><br>");
+            }
+            
+
+
+           
+           
+
+
+        </script>
+        
+    </head>
+
+    <body>
+
+    </body>
+    
+
+</html>

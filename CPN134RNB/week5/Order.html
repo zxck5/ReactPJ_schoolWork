@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>order</title>
+        <meta charset="UTF-8">        
+    </head>
+    <body>
+        <h1>Order Form</h1>
+
+        <form name="form1" method="post" action="">
+            <fieldset>
+                <legend>Member Information</legend>
+                <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="email" autofocus>
+                </label><br>
+                <label for="fn">First Name:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="fn">
+                </label><br>
+                <label for="ln">Last Name:&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="ln">
+                </label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Credit Card Information</legend>
+                <label for="ct">Card Type:
+                    <select name="cardtype" id="ct">
+                        <option>Visa</option>
+                        <option>Visa</option>
+                        <option>Visa</option>
+                    </select>
+                </label><br>
+                <label for="email">Card Number:
+                    <input type="text" id="email" placeholder="16digit" maxlength="16">
+                </label><br>
+                <label for="exdate">Expiration Date:
+                    <select name="month">
+                        <option>Jan</option>
+                        <option>Feb</option>
+                        <option>Mar</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>Jun</option>
+                        <option>Jul</option>
+                        <option>Aug</option>
+                        <option>Sept</option>
+                        <option>Oct</option>
+                        <option>Nov</option>
+                        <option>Dec</option>
+                    </select>
+                    <select name="year">
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                    </select>
+
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Submit Your Order</legend>
+                <input type="submit" name="btn" value="Submit">
+                <input type="reset" name="reset" value="Reset Fields">
+            </fieldset>
+
+        </form>
+        
+    </body>
+</html>

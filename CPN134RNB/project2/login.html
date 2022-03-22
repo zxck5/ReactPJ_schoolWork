@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>ShoppingMall</title>
+        <meta name="Shoppingmall" author="Jiwon&amp;Hoi" content="Loginpage">
+        <link rel="stylesheet" text="text/css" href="CSS.css">
+        <meta charset="UTF-8">
+    
+        <style>
+
+            #createIDpage {background-color:whitesmoke; display: flex; justify-content: center;}
+
+            #createIDpage .login-box {
+                width: 500px; height: 500px; background-color: white;
+            }
+            #createIDpage .signButton {
+                width: 500px; height: 70px; display: flex; margin-top: 100px ;;
+            }
+            #createIDpage .signButton a {
+            text-decoration: none;
+            color: black;
+            }
+            #createIDpage .signUpBox {
+                background-color: lightseagreen; width: 250px; text-align: center; height: 70px; display: flex; align-items: center;
+                border: 1px solid black;
+            }
+            #createIDpage .signButton span {
+                height: 20px; display: block; margin-left: 90px; 
+            }
+            #createIDpage .signInBox {
+                background-color:lightseagreen; width: 250px; text-align: center; height: 70px; display: flex; align-items: center;
+                border-top: 1px solid black;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+            #createIDpage .signUp-content {
+                height: 430px; margin-top: 30px; 
+            }
+            #createIDpage .signUp-content .span1 {
+                display: flex; justify-content: center;
+            }
+            #createIDpage .signUp-content .inputbox {
+                margin-top: 30px; display: flex; justify-content: center;
+            }
+            #createIDpage .signUp-content .inputbox2 {
+                
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+            }
+            #createIDpage .birthbox {
+                display: flex;
+                justify-content: center;
+                margin-left: 10px;
+            }
+            #createIDpage .month {
+                margin-left: 10px;
+            }
+            #createIDpage .submit_button {
+                display: flex;
+                justify-content: center;
+            }
+            #createIDpage #btn1 {
+                width: 300px;
+                height: 40px;
+                background-color:lightseagreen;
+                color: white;
+            }
+
+        </style>
+    
+    
+    </head>
+    <body id="wrap">
+        <header>
+            
+            <div class="header_flexbox1">
+                <!-- <div class="lang">
+                    
+                   <select name="language">
+                       <option value="English" selected>English</option>
+                   </select>
+                
+                </div> -->
+
+            </div>
+            <div class="header_flexbox2">
+                <div class="img1">
+                    <a href="Mainpage.html"><img src="..\picture\logo.jpg" ></a>
+                </div>
+            </div>
+            <div class="header_flexbox3">
+                <div class="logo">
+                    <a href="login.html">
+                        <img src="..\picture\user-circle-regular-36.png" alt="loginIcon" height="30px">
+                        <span class="links_name">Login</span>
+                    </a>
+        
+                    <a href="shoppingCart.html">
+                        <img src="..\picture\cart-regular-36.png" alt="shoppingIcon" height="30px">
+                        <span class="links_name">Shopping Cart</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Mainpage.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main id="createIDpage">
+            <form name="form1" method="get" action="Mainpage.html">
+            
+                <div class="login-box">
+                    <div class="signButton">
+                        <a href="login.html">
+                            <div class="signUpBox">
+                                <span>Sign in</span></div>
+                        </a>
+
+                        <a href="createID.html">
+                            <div class="signInBox"><span>Sign in</span></div>
+                        </a>
+                    </div>
+
+                    <div class="signUp-content">
+                       
+                        <div class="span1">
+                            <div>Log In With Email</div>
+                        </div><br>    
+                        <!-- email -->
+                        <div class="inputbox2">
+                            <label>
+                                <input type="email" name="un" id="em" placeholder="Email address" required size="46" style="height:30px;font-size:15px;">
+                            </label>
+                        </div>
+        
+                        
+                        <div class="inputbox2">
+                            <label>
+                                <input type="password" name="pw" id="user_pw" placeholder="Password (6 to 12 characters)" required size="46" maxlength="12" minlength="6" style="height:30px;font-size: 15px;">
+                            </label>
+                        </div>
+                        <!-- button -->
+                        <!-- we may put any image that is relevant to submit -->
+                        <br><br><br>
+                        <div class="submit_button">
+                            <input id="btn1" type="submit" value="Join Now">
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>Tel: +123 456 1234</li>
+                            <li>Email: info@dressedtothenight.com</li>
+                            <li><address>220 Yonge St. Toronto Canada</address></li>
+                            <li>Opening Hours : 10 am - 8 pm (Everyday)</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="Contact_Us.html">Contact</a></li>
+                            <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right">Privacy Policy | Terms and Conditions | 2018&copy;DressedToTheNines</div>
+        </footer>
+    </body>
+    
+
+
+
+</html>

@@ -1,0 +1,59 @@
+<html>
+
+    <head>
+
+
+
+    </head>
+
+    <body>
+
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid black" ></canvas>
+
+        <script>
+
+            var c =document.getElementById("myCanvas");
+
+            var ctx = c.getContext("2d");
+
+          
+
+           /* ctx.beginPath();
+
+            ctx.arc(100,50,30,0,Math.PI,true);// x,y, radius,starting angle, ending angle, counter clockwise??
+
+            ctx.stroke();*/
+
+
+
+
+
+            ctx.beginPath();
+
+            ctx.arc(30,50,30,0,2*Math.PI);// x,y, radius,starting angle, ending angle, counter clockwise??
+
+            ctx.stroke();
+
+            ctx.beginPath();
+
+            ctx.arc(90,50,30,0,2*Math.PI);// x,y, radius,starting angle, ending angle, counter clockwise??
+
+            ctx.stroke();
+
+            ctx.beginPath();
+
+            ctx.arc(150,50,30,0,2*Math.PI);// x,y, radius,starting angle, ending angle, counter clockwise??
+
+            ctx.stroke();
+
+            ctx.beginPath();
+
+            ctx.arc(210,50,30,0,2*Math.PI);// x,y, radius,starting angle, ending angle, counter clockwise??
+
+            ctx.stroke();
+
+        </script>
+        
+    </body>
+
+</html>

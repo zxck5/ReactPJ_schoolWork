@@ -1,0 +1,17 @@
+#wrap {height: 500px;}
+header {height: 100px;}
+header > div {width: 200px;}
+.logo-text {text-decoration: none; color:darkcyan;}
+.logo-text:hover {text-decoration: none; color:darkcyan;}
+
+.nav-link {color:darkcyan;}
+.nav-link:hover {color:darkcyan;}
+
+
+section > .contetnts > .content1 > .bold {font-weight: bold;}
+
+.contents {height: 300px;}
+footer {height: 100px;}
+footer > .footer-logo {height: 100px;}
+footer > address {height: 100px;}
+footer > .footer-info  {height: 100px;}

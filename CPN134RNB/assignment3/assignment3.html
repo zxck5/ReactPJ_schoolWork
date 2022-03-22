@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>assignment3</title>
+        <meta charset="utf-8">
+
+        <script type="text/javascript" src="jquery.js"></script>
+        <script src="js/assignment3.js"></script>
+
+        <style>
+            #r1 {color: red;}
+        </style>
+    </head>
+
+    <body>
+        <form id="f1" action="assignment3_1.html" method="get">
+
+            <label id="ln">LastName</label>
+            <input type="text" name="ln" id="ln" placeholder="Last name">
+            <span id="r1" class="result1"></span><br>
+
+            <label id="fn">FirstName</label>
+            <input type="text" name="fn" id="fn" placeholder="First name">
+            <span id="r1" class="result2"></span><br>
+
+            <label for="pn">Phone Number:</label>
+            <input type="tel" id="pn" name="phoneNum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx">
+            <span id="r1" class="result3"></span><br>
+
+
+            <label for="pdt1">Product1 amount</label>
+            <input type="text" id="pdt1" name="product1">
+            <span id="r1" class="result4"></span><br>
+
+
+            <label for="pdt2">Product2 amount</label>
+            <input type="text" id="pdt2" name="product2">
+            <span id="r1" class="result5"></span><br>
+
+
+            <label for="pdt3">Product3 amount</label>
+            <input type="text" id="pdt3" name="product3">
+            <span id="r1" class="result6"></span><br>
+
+
+            <button type="button" id="btn" >calculate</button>
+            
+
+            <div class="cal" style="display: none;">
+                <label id="ln2">LastName</label>
+                <input type="text" name="ln2" id="ln2" value=""><br>
+
+                <label id="fn2">FirstName</label>
+                <input type="text" name="fn2" id="fn2"value="" ><br>
+               
+                <label for="pn2">Phone Number:</label>
+                <input type="tel" id="pn2" name="phoneNum2" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="" ><br>
+
+
+                <label for="t">total:</label>
+                <input type="text" name="total" id="t" class="total" value=""><br>
+
+                <label for="t2">tax:</label>
+                <input type="text" name="tax" id="t2" class="tax" value="" ><br>
+
+                <label for="t3">tax+total</label>
+                <input type="text" name="realTotal" id="t3" class="realTotal" value="">
+
+                <!-- <input id="submitBtn" type="submit" value="button"> -->
+                <button type="button" id="submitBtn">submit</button>
+                
+            </div>
+
+
+
+            
+        </form>    
+        
+
+
+    </body>
+
+
+</html>

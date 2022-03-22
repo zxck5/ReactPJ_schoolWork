@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title> Jquery filters</title>
+
+        <style>
+
+            .box{
+
+                border:2px solid black;
+
+                height:150px;
+
+                width:250px;
+
+            }
+
+        </style>
+
+        <script type="text/javascript" src="../jquery.js"></script>
+
+        <script type="text/javascript">
+
+            
+
+            $("document").ready(function(){
+                // $("#evtTarget").click(fun1)
+                $("#btn1").click(fun1);
+                $("#evtTarget").hover(fun2,fun3);
+                $("#name").html("Hello"); // this is to replace the content
+                $("#name").append("jiwon"); // this is to add the content
+
+            }); // ready function ends
+
+            function fun1(){
+                $(this).css("background-color","green");
+            }
+            function fun2(){
+                
+                $(this).css("background-color","green");
+            }
+            function fun3(){
+                $(this).css("background-color","white");
+
+            }
+            
+        </script>
+
+    </head>
+
+    <body>
+
+       <h1 id ="h1">Using event Handlers</h1>
+
+       <div id ="evtTarget" class="box"></div>
+
+       <button id="btn1">Click Me</button><br>
+       <div id="name"></div>    
+
+    </body>   
+
+</html>  

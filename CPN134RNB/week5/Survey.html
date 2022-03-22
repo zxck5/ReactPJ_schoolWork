@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>survey</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form name="form2" method="post" action="">
+            <fieldset>
+                <h1>Please complete our survey</h1>
+                <h2>Contact information</h2>
+                <label for="email">Email Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="email">
+                </label><br>
+                <label for="fn">First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="fn">
+                </label><br>
+                <label for="ln">Last Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" id="ln">
+                </label><br>
+                <h2>Geographic information</h2>
+                <label for="state">State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" placeholder="Two characters" maxlength="2" id="state">
+                </label><br>
+                <label for="zcode">ZipCode:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" placeholder="Five digits" maxlength="5" id="zcode">
+                </label><br>
+
+                <h2>How did you hear about us?</h2>
+                <label for="ws">Web Search&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="checkbox" id="ws" value="websearch"><br>
+
+                <label for="fb">Facebook&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="checkbox" id="fb" value="Facebook"><br>
+
+                <label for="tw">Twitter&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="checkbox" id="tw" value="Twitter"><br>
+                <label for="em">Email message&nbsp;</label>
+                <input type="checkbox" id="em" value="Email message"><br>
+
+                <h2>Thank You For Taking Our Survey!</h2>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="btnsurvey" value="Submit">
+                <input type="reset" name="resetsurvey" value="Reset Fields">
+            </fieldset>
+
+        </form>
+    </body>
+</html>

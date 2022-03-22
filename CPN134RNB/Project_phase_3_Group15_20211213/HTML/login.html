@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>ShoppingMall</title>
+        <meta name="Shoppingmall" author="Jiwon&amp;Hoi" content="Loginpage">
+        <link rel="stylesheet" type="text/css" href="../CSS/common.css">
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script src="../js/loginPage.js"></script>
+    
+        <style>
+
+            #createIDpage {background-color:whitesmoke; display: flex; justify-content: center;}
+
+            #createIDpage .login-box {
+                width: 500px; height: 500px; background-color: white;
+            }
+            /* #createIDpage .signButton {
+                width: 500px; height: 70px; display: flex; margin-top: 100px ;;
+            }
+            #createIDpage .signButton a {
+            text-decoration: none;
+            color: black;
+            } */
+            /* #createIDpage .signButton span {
+                height: 20px; display: block; margin-left: 225px; 
+            } */
+            #createIDpage .signInBox {
+                background-color:#99A799; 
+                width: 500px; 
+                text-align: center; 
+                height: 70px; 
+                display: flex; 
+                align-items: center;
+                border-left: 1px solid black;
+                border-top: 1px solid black;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+            #createIDpage .signIn-content {
+                background-color: white;
+                height: 450px; 
+                padding-top: 30px; 
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+            #createIDpage .signIn-content .span1 {
+                display: flex; justify-content: center;
+            }
+            #createIDpage .signIn-content .inputbox {
+                margin-top: 30px; display: flex; justify-content: center;
+            }
+            #createIDpage .signIn-content .inputbox2 {
+                
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+            }
+            #createIDpage .birthbox {
+                display: flex;
+                justify-content: center;
+                margin-left: 10px;
+            }
+            #createIDpage .month {
+                margin-left: 10px;
+            }
+            #createIDpage .submit_button {
+                display: flex;
+                justify-content: center;
+            }
+            #createIDpage #btn1 {
+                width: 300px;
+                height: 40px;
+                background-color:#99A799;
+                color: white;
+                border-radius: 40px;
+            }
+            /*---------------------------------------------------------------------------------------*/
+
+            #createIDpage .login-box2 {
+                width: 500px; height: 500px; background-color: white;
+            }
+            #createIDpage .signButton {
+                width: 500px; height: 70px; display: flex; margin-top: 100px;
+            }
+            #createIDpage .signButton a {
+            text-decoration: none;
+            color: black;
+            }
+            #createIDpage .signUpBox {
+                background-color: #99A799; width: 250px; text-align: center; height: 70px; display: flex; align-items: center;
+                border: 1px solid black;
+            }
+            #createIDpage .signButton span {
+                height: 20px; display: block; margin-left: 90px; 
+            }
+            #createIDpage .signInBox {
+                background-color:#99A799; width: 250px; text-align: center; height: 70px; display: flex; align-items: center;
+                border-top: 1px solid black;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+
+            #createIDpage .login-box2 .signUp-content {
+                background-color: white;
+                height: 470px; 
+                padding-top: 30px; 
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+            #createIDpage .login-box2 .signUp-content .span1 {
+                display: flex; justify-content: center;
+               
+            }
+            #createIDpage .login-box2 .signUp-content .inputbox {
+                margin-top: 30px; display: flex; justify-content: center;
+            }
+            #createIDpage .login-box2 .signUp-content .inputbox2 {
+                
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+            }
+            #createIDpage .login-box2 .birthbox {
+                display: flex;
+                justify-content: center;
+                margin-left: 10px;
+            }
+            #createIDpage .login-box2 .month {
+                margin-left: 1px;
+            }
+            #createIDpage .login-box2 .checkbox {
+                margin-left: 40px;
+            }
+
+            #createIDpage .login-box2 .submit_button {
+                display: flex;
+                justify-content: center;
+               
+            }
+            #createIDpage #btn2 {
+                width: 300px;
+                height: 40px;
+                background-color:#99A799;
+                color: white;
+                border-radius: 40px;
+                
+            }
+
+        </style>
+    
+    
+    </head>
+    <body id="wrap">
+        <header>
+            
+            <div class="header_flexbox1">
+                <!-- <div class="lang">
+                    
+                   <select name="language">
+                       <option value="English" selected>English</option>
+                   </select>
+                
+                </div> -->
+
+            </div>
+            <div class="header_flexbox2">
+                <div class="img1">
+                    <a href="Mainpage.html"><img src="..\picture\logo.jpg" ></a>
+                </div>
+            </div>
+            <div class="header_flexbox3">
+                <div class="logo">
+                    <a href="login.html">
+                        <img src="..\picture\user-circle-regular-36.png" alt="loginIcon" height="30px">
+                        <span class="links_name">Login</span>
+                    </a>
+        
+                    <a href="shoppingCart.html">
+                        <img src="..\picture\cart-regular-36.png" alt="shoppingIcon" height="30px">
+                        <span class="links_name">Shopping Cart</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Mainpage.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main id="createIDpage">
+            <form id="f1" name="form1" method="get" action="Mainpage.html">
+            
+                <div class="login-box">
+                    <div class="signButton">
+                        <a href="#">
+                            <div class="signUpBox">
+                                <span>Sign up</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="signInBox"><span>Sign in</span></div>
+                        </a>
+                    </div>
+
+                    <div class="signIn-content">
+                       
+                        <div class="span1">
+                            <div>Log In With Email</div>
+                        </div><br>    
+                        <!-- email -->
+                        <div class="inputbox2">
+                            <label>
+                                <input type="email" name="un1" id="em" placeholder="Email address" required size="40" style="height:30px;font-size:15px;"><br>
+                                <div><span class="sp1" style="display: none; color: red;">check your email format: aaa@bbb.com</span></div>
+                            </label>
+                        </div>
+                        <br>
+                        
+                        <div class="inputbox2">
+                            <label>
+                                <input type="password" name="pw" id="user_pw" placeholder="Password (6 to 12 characters)" required size="40" style="height:30px;font-size: 15px;">
+                                <div><span class="sp1_pw" style="display: none; color: red;">required</span></div>
+                                <!-- <input type="password" name="pw" id="user_pw" placeholder="Password (6 to 12 characters)" required size="46" maxlength="12" minlength="6" style="height:30px;font-size: 15px;"> -->
+                            </label>
+                        </div>
+                        <!-- button -->
+                        <!-- we may put any image that is relevant to submit -->
+                        <br><br><br>
+                        <div class="submit_button">
+                            <input id="btn1" type="button" value="Join Now">
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <form id="f2" name="form2" method="get" action="Mainpage.html">
+
+                <div class="login-box2" style="display: none;">
+                    <div class="signButton">
+                        <a href="#">
+                            <div class="signUpBox">
+                                <span>Sign up</span></div>
+                        </a>
+
+                        <a href="#">
+                            <div class="signInBox"><span>Sign in</span></div>
+                        </a>
+                    </div>
+
+                    <div class="signUp-content">
+                       
+                        <div class="span1">
+                            <div>Sign Up With Email</div>
+                        </div>
+
+                        <div class="inputbox">
+                            <label>
+                                <input type="text" name="fn" id="firstname" placeholder="First Name"  required size="20" style="height:30px;font-size:15px;">
+                                <div><span class="sp1_fn" style="display: none; color: red;">type your first name</span></div>
+                            </label>
+                            &nbsp;&nbsp;
+                            <br>
+                            <label>
+                                <input type="text" name="ln" id="lastname" placeholder="Last Name"  required size="20" style="height:30px;font-size:15px;">
+                                <div><span class="sp1_ln" style="display: none; color: red;">type your last name</span></div>
+                            </label>
+                            
+                            
+                        </div>
+                        
+        
+                        <!-- email -->
+                        <div class="inputbox2">
+                            <label>
+                                <input type="email" name="un2" id="em2" placeholder="Email address" required size="46" style="height:30px;font-size:15px;">
+                                <div><span class="sp1" style="display: none; color: red;">check your email format: aaa@bbb.com</span></div>
+                            </label>
+                        </div>
+        
+                        
+                        <div class="inputbox2">
+                            <label>
+                                <input type="password" name="pw2" id="user_pw" placeholder="Password (6 to 12 characters)" required size="46" maxlength="12" minlength="6" style="height:30px;font-size: 15px;">
+                                <div><span class="sp1_pw" style="display: none; color: red;">required</span></div>
+                            </label>
+                        </div>
+            
+                        
+                        
+                        <!-- DOB -->
+                        <br><br>
+                        <div class="birthbox">
+
+                            <div class="span1">Enter your birthdate to receive a free gift every year.
+    
+                            </div>
+                            <br>
+                            <div class="month">
+    
+                                <select name="month">
+                                    <option value="January">January</option>
+                                    <option value="February">February</option>
+                                    <option value="March">March</option>
+                                    <option value="April">April</option>
+                                    <option value="May">May</option>
+                                    <option value="June">June</option>
+                                    <option value="July">July</option>
+                                    <option value="August">August</option>
+                                    <option value="September">September</option>
+                                    <option value="October">October</option>
+                                    <option value="November">November</option>
+                                    <option value="December">December</option>
+                                </select>
+                                <select name="day">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                    <option value="31">31</option>
+                                </select>
+                            </div>
+                        </div>
+
+        
+                        
+                        <br>
+                        <div class="checkbox">
+                            <input type="checkbox" name="subscribe" value="true">&nbsp;&nbsp;Subscribe to Dressed.To.The.Nines emails
+                        </div>
+                        <!-- button -->
+                        <!-- we may put any image that is relevant to submit -->
+                        <br><br><br>
+                        <div class="submit_button">
+                            <input id="btn2" type="button" value="Join Now">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>Tel: +123 456 1234</li>
+                            <li>Email: info@dressedtothenight.com</li>
+                            <li><address>220 Yonge St. Toronto Canada</address></li>
+                            <li>Opening Hours : 10 am - 8 pm (Everyday)</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="Contact_Us.html">Contact</a></li>
+                            <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right">Privacy Policy | Terms and Conditions | 2018&copy;DressedToTheNines</div>
+        </footer>
+    </body>
+    
+
+
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+    <head>
+
+        <title> css demo </title>
+
+        <meta name ="author" content = "Ronak Sheth">
+
+        <meta name ="description" content = "css grid box">
+
+        <meta charset= "UTF-8"> 
+
+        <style>
+            .gridContainer{
+                display: grid;
+                grid-template-columns: 25% 75%;
+                border: 1px solid black;
+                grid-template-areas: " h h"
+                                    "r c"
+                                    "f f";
+            }
+            div{
+                border: 1px solid red;
+            }
+            .header {
+                grid-area: h;
+                background-color: lightblue;
+            }
+            .ref{
+                grid-area: r;
+                background-color: pink;
+            }
+            .content{
+                grid-area: c;
+                background-color: lightgreen;
+            }
+            .footer{
+                grid-area: f;
+                background-color: yellow;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <section class="gridContainer">
+            <div class="header">1</div>
+            <div class="ref">2</div>
+            <div class="content">3</div>
+            <div class="footer">4</div>
+        </section>
+
+        
+
+    </body>
+
+</html>    

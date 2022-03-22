@@ -1,0 +1,51 @@
+{
+    "GAMES" : [
+        {
+            "name" : "Messed Up Rpg",
+            "category" : "RPG",
+            "characters" : [
+                {
+                    "name" : "Yo",
+                    "gender" : "Male",
+                    "age" : 10
+
+                },
+                {
+                    "name" : "Whats up",
+                    "gender": "Female",
+                    "age" : 20
+
+                }
+            ],
+            "price" : 1000,
+            "statue" : {
+                "itemsSold": 10,
+                "inSale" : true
+            }            
+        },
+        {
+            "name" : "gunz",
+            "category" : "FPS",
+            "characters" : [
+                {
+                    "name" : "HELLO",
+                    "gender" : "Male",
+                    "age" : 40
+                },
+                {
+                    "name" : "WORLD",
+                    "gender" : "Female",
+                    "age" : 20
+                }
+            ],
+            "price" : 10,
+            "statue" : {
+                "itemsSold": 90000,
+                "inSale" : true
+            }      
+        }
+
+
+    ]
+
+}

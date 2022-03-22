@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> week_4</title>
+    <meta name = "author" content="">
+    <meta name="description" content="forms">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <!-- this is for form demo -->
+    <!--nonvalidate    every attribute won't be working-->
+    <form name ="form1" method = "get" action = "secondPage.html" > <!-- mthod can be get of post-->
+        <!--explicit label-->
+        <label for="t1">Username : </label>
+        <input type="text" name="un" maxlength="5" size="20" id="t1" required><br><br> <!-- readonly-->
+        <!-- for attribute will have the value of input id-->
+        <!-- implicit label-->
+        <label>
+            Password : <input type="password" name ="pw" required autofocus placeholder="enter 8 character password"><br><br>
+        </label>
+        <br><br>
+        Age : <input type="number"name="age" min="16" max="90" step="5">
+
+        <br><br>
+        Email : <input type="email" name="em" disabled><br><!-- disabled -->
+        <p>Which is the captial of Ontario</p>
+        <!--if the name is different, there will be the answer can be more than one -->
+        <fieldset>
+            <legend>Option</legend>
+            <input type="radio" name="answer1" value="TRNT" id="r1">
+            <label for="r1">Toronto</label><br>
+            <input type="radio" name="answer1" value="Sudbury" id="r2">
+            <label for="r2">Sudbury</label><br>
+            <input type="radio" name="answer1" value="OTW" id="r3">
+            <label for="r3">Ottawa</label><br>
+            <input type="radio" name="answer1" value="OAK" id="r4">
+            <label for="r4">Oakville</label><br>
+        </fieldset>
+        <br><br>
+      
+        <fieldset>
+            <legend>Select your hobbies:</legend>
+            <input type="checkbox" name="chk1" value="Swim" id="c1">
+            <label for="c1">Swimming</label><br>
+            <input type="checkbox" name="chk2" value="Dancing" id="c2">
+            <label for="c2">Dancing</label><br>
+            <input type="checkbox" name="chk3" value="Reading" id="c3">
+            <label for="c3">Reading</label><br>
+            <input type="checkbox" name="chk4" value="Writing" id="c4">
+            <label for="c4">Writing</label><br>
+        </fieldset>
+        <br><br>
+        <p>Select your hobbies:</p>
+        <select name="mycity">
+            <optgroup label="Ontario" multiple size="4">
+                <option>Toronto</option>
+                <option>Ottawa</option>
+            </optgroup>
+            <optgroup label="Quebec">
+                <option>Montreal</option>
+                <option>Quebec City</option>
+            </optgroup>
+            <optgroup label="Alberta">
+                <option>Edmonton</option>
+                <option>Calgary</option>
+            </optgroup>
+            <optgroup label="B.C.">
+                <option>Vancouver</option>
+                <option>Whistler</option>
+            </optgroup>
+        </select>
+        <p>comments:</p>
+        <textarea name="comments" rows="10" cols="50" placeholder="hello">
+
+        </textarea>
+        Rate your experiences:
+        <input type="range" min="0" max="10" step="5">
+        <br><br>
+        <label for="f1">choose the file: </label>
+        <input type="file" name="myfile" id="f1">
+        <br><br>
+        <br><br>
+        <label for="u1">URL: </label>
+        <input type="url" name="myurl" id="u1" autocomplete="on">
+        <br>
+        <input type="submit" name="btn1" value = "click here to submit"><br>
+        <input type="reset" name="btn2" value = "clear"> <!--clears everything-->
+        <input type="button" name="btn3" value = "click me!!"><br>
+        <input type="image" src="puzzle1.jpg" width="100" height="30">
+        <button>
+            <img src="puzzle1.jpg" width="30" height="30"> Add to Cart
+        </button>
+    </form>
+    <br><br><br><br><br><br><br><br>
+</body>
+</html>

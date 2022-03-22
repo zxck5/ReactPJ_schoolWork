@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<h1>JS Deom</h1>
+
+<p id="p1"></p>
+<p id="result"></p>
+
+<script>
+    var age = 75;
+    var message;
+    if (age >= 16 && age <= 80) {
+        message= "You are elgible for  dr license"
+    } else {
+        message= "you are not elgible";
+        
+    }
+    document.getElementById(result).innerHTML=message;
+
+    for (var a = 0; a < 5; a ++) {
+        // document.write(a+"<br>");
+        message += "The number is " + a + "<br>";
+    }
+    document.getElementById(result).innerHTML=message;
+</script>

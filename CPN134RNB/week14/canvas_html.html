@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+
+
+    <body>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid black"></canvas>
+        <script>
+            var c =document.getElementById("myCanvas");
+            var ctx = c.getContext("2d"); //create 2D graphic
+            ctx.moveTo(0,0);
+            ctx.lineTo(100,50)
+            ctx.stroke(); //create line between (0,0) to (100,50)
+
+            ctx.moveTo(100,50);
+            ctx.lineTo(200,0)
+            ctx.stroke(); //create line between (100,50) to (200,0)
+        </script>
+    </body>
+</html>

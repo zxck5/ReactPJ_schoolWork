@@ -1,0 +1,15 @@
+/* #wrap {} */
+
+header {height: 100px;}
+header > .logo {height: 100px;}
+header > nav {height: 100px;}
+
+.contents {height: 500px;}
+/* .contents > .content1 {width: 600px; height: 500px;}
+.contents > .content2 {width: 600px; height: 500px;} */
+.contents > .content2 > .article1 {width: 500px; height: 250px;}
+.contents > .content2 > .article2 {width: 500px; height: 250px;}
+
+footer {height: 80px;}
+/* footer > div {width: 100px; height: 80px;}
+footer > address {width: 1000px; height: 80px;} */

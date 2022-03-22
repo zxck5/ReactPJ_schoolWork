@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShoppingMall</title>
+        <meta name="Shoppingmall" author="Jiwon&amp;Hoi" content="ShoppingCart">    
+        <meta charset="UTF-8">
+        <link rel="stylesheet" text="text/css" href="CSS.css">
+    
+        <style>
+            /*this is css for ShoppingCart page*/
+            #shoppingCart_page {
+                height: 1000px;
+                
+            }
+            #shoppingCart_page .section1 {
+                height: 100px;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #shoppingCart_page .section1 > div {
+                margin: 0px 100px;
+            }
+
+            #shoppingCart_page .section1 .img1 {
+                margin-left: 27px;
+            }
+            #shoppingCart_page .section1 .img2 {
+                margin-left: 33px;
+            }
+            #shoppingCart_page .section1 .img3 {
+                margin-left: 44px;
+            }
+
+
+            #shoppingCart_page .logo1 {
+                display: flex;
+                justify-content: center;
+            }
+            #shoppingCart_page .checkUser {
+                height: 900px;
+            }
+
+            #shoppingCart_page .checkUser >div{
+                margin: 20px;
+            }
+            #shoppingCart_page .table1 {
+                display: flex;
+                justify-content: center;
+            }
+            .table1 .img1 {
+                display: flex;
+                justify-content: center;
+            }
+            .checkUser .inputContent{
+                display: flex;
+                justify-content: center;
+            }
+            .checkUser form {
+                width: 700px;
+            }
+            .checkUser form .btn1 {
+                width: 150px;
+                height: 30px;
+                background-color:green;
+            }
+            .checkUser form .submitBtn {
+                display: flex;
+                justify-content: end;
+            }
+
+        </style>
+    </head>  
+    
+    
+    
+    <body id="wrap">
+        <header>
+            <div class="header_flexbox1">
+                <!-- <div class="lang">
+                    
+                   <select name="language">
+                       <option value="English" selected>English</option>
+                   </select>
+                
+                </div> -->
+
+            </div>
+            <div class="header_flexbox2">
+                <div class="img1">
+                    <a href="Mainpage.html"><img src="..\picture\logo.jpg" ></a>
+                </div>
+            </div>
+            <div class="header_flexbox3">
+                <div class="logo">
+                    <a href="login.html">
+                        <img src="..\picture\user-circle-regular-36.png" alt="loginIcon" height="30px">
+                        <span class="links_name">Login</span>
+                    </a>
+        
+                    <a href="shoppingCart.html">
+                        <img src="..\picture\cart-regular-36.png" alt="shoppingIcon" height="30px">
+                        <span class="links_name">Shopping Cart</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Mainpage.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main id="shoppingCart_page">
+
+            <div class="section1">
+                <div ><img class="img1" src="../picture/number1-in-circle.png" width="30px" height="30px">
+                    <div>Shopping Cart</div>
+                </div>&rarr;
+                <div><img class="img2" src="../picture/number2-in-circle.png" width="30px" height="30px">
+                    <div>Fill Information</div>
+                </div>&rarr;
+                <div><img class="img3" src="../picture/number3 in circle.png" width="30px" height="30px">
+                    <div>Order Confirmation</div>
+                </div>
+            </div>
+
+            <section class = "checkUser">
+                
+                <div class="text-align-center"><i>Already a member? Login for easier order tracking and faster checkout!</i></div>
+                <div class="logo1">
+                    <a href="login.html"><img src="../picture/loginlogo.PNG" height="45px"></a>
+                    <a target="_blank" href="https://www.facebook.com/"><img src="../picture/loginlogo2.PNG" height="45px"></a>
+                </div>
+                <div class="table1">
+                    <table border="1">
+                        <tr>
+                            <th><br>
+                                <span>Product Information</span>
+                                
+                            </th>
+                            <th><br>
+                                <span>Promotions</span>
+                                
+                            </th>
+                            <th><br>
+                                <span>Unit Price</span>
+                                
+                            </th>
+                            <th><br>
+                                <span>QTY</span>
+                                
+                            <th><br>
+                                <span>Subtotal</span>
+                               
+                            </th>
+                
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <div class="img1">
+                                    <img src="../picture/FunnelNeckCapeWoolSweater_ivory_1.JPG" height="150px" width="130px">
+                                </div>
+                                <br>
+                                <span>Funnel Neck Cape Wool Sweater</span>
+                                <br>
+                                
+                                <span>Ivory</span>
+                            </td>
+                            <td>
+                                <span> Available Promotions :
+                                    <br> Get 10% off on Entire Order
+                                </span>
+                               
+                            </td>
+                            <td><span>CAD$198</span></td>
+                
+                            <td><span>quantity:<input type="number"name="quantity" class="productQuantity" min="1" max="100" step="1"></span></td>
+                            <td>CAD$198</td>
+                        </tr>
+            
+                                
+                    </table>
+
+
+                </div>
+
+                <div class="inputContent">
+
+                    <form method="get" action="Checkout.html" name="ShoppingCartForm">
+                        <!--Shipping Desctination-->
+                        <p>Shipping Destination</p>
+                        <select name="deliverydestination">
+                            <option value="Alberta">Alberta</option>
+                            <option value="British Columbia">British Columbia</option>
+                            <option value="Manitoba">Manitoba</option>
+                            <option value="NewBrunswick">New Brunswick</option>
+                            <option value="NewfoundlandLabrador">Newfoundland and Labrador</option>
+                            <option value="NovaScotia">Nova Scotia</option>
+                            <option value="Ontario">Ontario</option>
+                            <option value="PrinceEdwardIsland">Prince Edward Island</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Saskatchewan">Saskatchewan</option>
+                        </select>
+        
+                        <!--Shipping Method-->
+                        <p>Delivery Method</p>
+                        <select name="deliverymethod">
+                            <option value="Standard">Standard</option>
+                            <option value="Express">Express</option>
+                            <option value="Priority">Priority</option>
+                        </select>
+        
+                        <!--Payment Method-->
+                        <p>Payment Method</p>
+                        <select name="Paymentmethod">
+                            <option value="bank">Bank Transfer - BMO/TD/RBC</option>
+                            <option value="applepay">Apple Pay (+3.4% handling fee)</option>
+                            <option value="googlepay">Google Pay (+3.4% handling fee)</option>
+                            <option value="credit">Credit Card (Visa/MasterCard/American Express) (+3.4% handling fee)</option>
+                            <option value="paypal">PayPal (+3.9% handling fee)</option>
+                        </select>
+                
+        
+                    
+        
+                        
+                        <br><br>
+                    
+        
+                        <table border="1">
+                            <tr>
+                                <th>Order Summary</th>
+                                <th>$</th>
+                            </tr>
+        
+                            <tr>
+                                <td>Item Subtotal:</td>
+                                <td>CAD$198</td>
+                            </tr>
+        
+                            <tr>
+                                <td>Discount Applied:</td>
+                                <td>-CAD$19.8</td>
+                            </tr>
+        
+                            <tr>
+                                <td>Delivery Fee:</td>
+                                <td>CAD$20</td>
+                            </tr>
+        
+                            <tr>
+                                <td>Total:</td>
+                                <td>CAD$198.2</td>
+                            </tr>
+        
+                        </table>
+        
+                        <br>
+                        <div class="submitBtn"> 
+                            <input type="submit" class="btn1" name="proccedtocheckout" value="Proceed to Checkout">
+                        </div>
+                        
+                    </form>
+
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>Tel: +123 456 1234</li>
+                            <li>Email: info@dressedtothenight.com</li>
+                            <li><address>220 Yonge St. Toronto Canada</address></li>
+                            <li>Opening Hours : 10 am - 8 pm (Everyday)</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="Contact_Us.html">Contact</a></li>
+                            <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right">Privacy Policy | Terms and Conditions | 2018&copy;DressedToTheNines</div>
+        </footer>
+        
+    </body>
+
+
+
+
+</html>

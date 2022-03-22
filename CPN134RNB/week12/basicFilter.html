@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title> Jquery filters</title>
+
+        <script type="text/javascript" src="jquery/jquery.js"></script>
+
+        <script type="text/javascript">
+
+            $("document").ready(function(){
+
+                //this is where youwrite jquery code
+                // $("p").css("border","2px solid red");
+                // $("p:first").css("background-color","yellow")
+                // $("p:last").css("background-color","pink")
+                // $("p:odd").css("border","3px solid red");
+                // $("p:even").css("border","3px solid green");
+                // $("p:eq(2)").css("background-color","pink");
+                // $("p:not(p:eq(2))").css("background-color","yellow");
+                $("p:lt(1)").css("background-color","lightgreen");
+                // lt is less than
+                $("p:gt(2)").css("background-color","lightblue");
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <h1> Jquery filters</h1>
+
+        <div id ="example">
+
+            <p class ="a">This is para 1 : index 0 </p>
+
+            <p id="para1">This is para 2 :index 1 </p>
+
+            <p class="b">This is para 3:index 2</p>
+
+            <p id ="para4">This is para 4: :index 3</p>
+
+            <p id="para5">This is para 5: :index 4</p>
+
+        </div>
+
+            <section class= "a" id="example">  This is section</section>
+
+    </body>   
+
+</html>    

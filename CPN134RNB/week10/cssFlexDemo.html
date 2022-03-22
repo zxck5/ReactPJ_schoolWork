@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+    <head>
+
+        <title> css demo </title>
+
+        <meta name ="author" content = "Ronak Sheth">
+
+        <meta name ="description" content = "css flex box">
+
+        <meta charset= "UTF-8"> 
+
+        <style>
+            .a{
+                display: flex;
+                
+                background-color: blue;
+                flex-direction: row;/*row, row-reverse, column, column-reverse*/
+                flex-wrap: wrap;/*wrap wrap-reverse, nowrap(bydefault)*/
+            }
+            .a >div{/*find out div tag which has immediate parent as class "a"*/
+                background-color: white;
+                border: 1px solid black;
+                margin: 20px;
+                padding: 10px;
+                /* width: 300px; */
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div  class="a"><!--container-->
+
+            <div>1</div><!--items-->
+            <div>2</div><!--items-->
+            <div>3</div><!--items-->
+            <div>4</div><!--items-->
+            <div>5</div><!--items-->
+            <div>6</div><!--items-->
+            <div>7</div><!--items-->
+            <div>8</div><!--items-->
+            <div>9</div><!--items-->
+            <div>10</div><!--items-->
+            <div>10</div><!--items-->
+            <div>10</div><!--items-->
+            <div>10</div><!--items-->
+            <div>10</div><!--items-->
+            <div>10</div><!--items-->
+            <div>10</div><!--items-->
+        </div>
+
+        
+
+    </body>
+
+</html>    

@@ -1,0 +1,103 @@
+<html>
+
+    <head>
+
+        <title> week_6</title>
+
+        <meta name="author" content="Ronak Sheth">
+
+        <meta name="description" content="css demo 1">
+
+        <meta charset="UTF-8">
+
+        <link href="css/main.css" rel="stylesheet"><!-- external styling-->
+
+
+
+        <!-- below is embedded styling-->
+
+        <style>
+            footer li { /*descendent*/
+                color: red;
+            }
+            main>h2{color: lime;} /*immidiate parent and child */
+            /* body li {
+                color: magenta;
+            } */
+            h2+p {/*adjacent sibling selects only p tag that is next to h2*/
+                color: blue;
+            }
+            h2~p{background-color: purple;}
+            /* selects all p tag which is sibling to h2 */
+            h1,h2 {background-color: beige;}
+
+            ul.speakers {background-color: cyan;}
+            h2#id1 {background-color: lightcoral;}
+            *[href] {color: green;}
+            p[lang] {color: yellow;}
+        </style>
+
+        <!-- style tag ends here -->
+
+
+
+
+
+    </head>
+
+    <body>
+
+        <main>
+
+            <h1>This Season's Town Hall speakers</h1>
+
+            <ul class="speakers">
+
+                <li>January: <a href="speakers/brancaccio.html">
+
+                    David Brancaccio</a></li>
+
+                <li>February: 
+
+                    <a href="speakers/fitzpatrick.html">
+
+                    Robert Fitzpatrick</a></li>
+
+                <li>March: <a href="speakers/williams.html">
+
+                    Juan Williams</a></li>
+
+            </ul>
+
+            <h2 id="id1">Post-lecture luncheons</h2>
+            <!-- <div></div> -->
+
+            <p>Extend the excitement by going to the luncheon</p>
+
+            <p lang="en-gb">A limited number of tickets are available.</p>
+
+            <p lang="en-us"><em>Contact us by phone</em> at (559) 555-
+
+               1212.</p>
+            <div lang="en-us">This is div</div>
+        </main>
+
+        
+
+    </body>
+
+    <footer>
+        <h2> Footer h2</h2>
+        <ul>
+
+            <li>f1</li>
+
+            <li>f2</li>
+
+            <li>f3</li>
+
+        </ul>
+
+    </footer>
+
+    </html>

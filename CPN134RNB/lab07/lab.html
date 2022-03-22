@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<h1>Lab7</h1>
+<h3>if you click it, you may see the image. <br> When you click it again, it will hide</h3>
+
+<button onclick="f1()">button1</button>
+<div id="img1"  style="visibility: hidden;">
+    <img src="image/pumpkin.gif">
+    <p>
+        hello, this is halloween party <br> please enjoy your party <br> thank you
+    </p>
+</div>
+
+
+<br>
+<button onclick="f2()">button2</button>
+<div id="img2" style="visibility: hidden;">
+    <img src="image/mickey.gif" >
+    <p>
+        hello, this is mickey mouse party <br> please enjoy your party <br> thank you
+    </p>
+
+</div>
+<button onclick="f3()">button3</button>
+<div id="img3"  style="visibility: hidden;">
+    <img src="image/cat1.jpg">
+    <p>
+        hello, this is cat party <br> please bring your cat to party <br> thank you
+    </p>
+</div>
+
+<script>
+
+
+   function f1(){
+        if (document.getElementById("img1").style.visibility == "visible") {
+            document.getElementById("img1").style.visibility = "hidden";
+        } else {
+            document.getElementById("img1").style.visibility = "visible";
+
+        }
+    
+   }
+   function f2() {
+        if (document.getElementById("img2").style.visibility == "visible") {
+            document.getElementById("img2").style.visibility = "hidden";
+        } else {
+            document.getElementById("img2").style.visibility = "visible";
+
+        }
+   }
+   function f3() {
+        if (document.getElementById("img3").style.visibility == "visible") {
+            document.getElementById("img3").style.visibility = "hidden";
+        } else {
+            document.getElementById("img3").style.visibility = "visible";
+
+        }
+   }
+   
+
+   
+</script>

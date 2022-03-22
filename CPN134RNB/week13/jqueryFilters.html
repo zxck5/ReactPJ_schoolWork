@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title> Jquery filters</title>
+
+        <script type="text/javascript" src="jquery/jquery.js"></script>
+
+        <script type="text/javascript">
+
+            $("document").ready(function(){
+                $("p[class=a]").css("border", "3px solid red");
+                //$("p[id]").css("border", "3px solid green")
+                $("p[lang*=us]").css("border", "3px solid blue"); // * means contains ==> lang contains us
+                $("p[lang^=en]").css("background-color", "pink"); // ^ means starts from ==> lang starts with en
+
+
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+       
+
+        <div id="example">
+
+            <p class="a">This is paragraph 1</p>
+
+            <p id="para1">This is paragraph 2</p>
+
+            <p class="b">This is paragraph 3</p>
+
+            <p id="para4" lang="en-us">This is paragraph 4</p>
+
+            <img src="fun.jpg" alt="fun jpg"><br>
+
+            <img src ="letshavefun.jpg" alt="letshavefun jpg"><br>
+
+            <img src="letshavefuntoday.jpg" alt="etshavefuntoday jpg"><br>
+
+            <p id="para5" lang="en-gb">This is paragraph 5</p>
+
+        </div>
+
+    </body>   
+
+</html>  

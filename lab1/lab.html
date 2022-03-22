@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    </head>
+    <body>
+        <br>
+        <script>
+            var today = moment('2022-01-16','YYYY-MM-DD');
+            alert("Today is : "+ today.format('YYYY-MM-DD'));
+            var tomorrow = today.add(1,'days').format("YYYY-MM-DD"); // adding one day
+            alert("tomorrow is : " + tomorrow);
+            var yesterday = today.subtract(1,'days').format("LLLL");
+            alert("yesterday is : " + yesterday);
+            // chaining
+            var date1 = today.subtract(1,'weeks').subtract(1,'months').format("LLLL");
+            alert("date1 is :" + date1);
+            // with object literal
+            var date2 = today.subtract({days:7,months:1}).format("LLLL");
+            alert("date2 is :" + date2); 
+
+            const nowDate = moment('2022-01-16');
+            
+            const nextDate = nowDate.clone().add(1,'days'); // 2022-01-17
+            alert("nextDate is " + nextDate.format("LLLL"));
+            const prevDate = nowDate.clone().subtract(4,'days'); // 2022-01-12
+            alert("prevDate is "+ prevDate.format("LLLL"));
+            console.log(nowDate); // 2019-12-10
+            alert("nowDate is" + nowDate.format("LLLL"));
+
+            //lodash
+            alert("check console please");
+            var array = ['kruskal', 'dijkstra', 'primPath','DFS','BFS'];
+
+            if (_.findIndex(array, function(n) {
+                return n == 'primPath';
+            }) == 2) {
+                console.log("primPath exists");
+            };
+            // findLastIndex starts from right side of array.
+
+            
+
+            var fw = _.first(array);
+            console.log(fw);
+            var lw = _.last(array);
+            console.log(lw);
+            var slice = _.slice(array,1,3);
+            console.log(slice);
+            var string1 = _.join(slice,',');
+            console.log(string1);
+            var array2 = ['a','b','b','a','c'];
+            var array3 = _.pull(array2.slice(0),'a','b');
+            console.log(array2);
+            console.log(array3);
+
+            var array4 = [1,2,3,4,5];
+            var evens = _.remove(array4.slice(0), function(n) {
+                return n % 2 == 0;
+            });
+            
+            console.log(_.sortedIndex(array4,2.5));
+
+            console.log(array4);
+            console.log(evens);
+            
+        </script>
+
+
+    </body>
+
+</html>

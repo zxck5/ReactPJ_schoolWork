@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>ShoppingMall</title>
+        <meta name="Shoppingmall" author="Jiwon&amp;Hoi" content="ShoppingCart">    
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../CSS/common.css">
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script src="../js/checkout.js"></script>
+        <style>
+            .section1 {
+                height: 100px;
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .section1 > div {
+                margin: 0px 100px;
+            }
+
+            .section1 .img1 {
+                margin-left: 27px;
+            }
+            .section1 .img2 {
+                margin-left: 33px;
+            }
+            .section1 .img3 {
+                margin-left: 44px;
+            }
+
+
+            #checkOut{
+                background-color:whitesmoke;
+                justify-content: center;
+                display: flex;
+                margin-bottom: 30px;
+                height: 1300px;
+            }
+
+           
+            
+            #checkOut .Orderinformation{
+                text-align: center;
+                margin-top:10px;
+                border-radius: 5px 5px 0 0;
+                overflow: hidden;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+                padding-top: 10px;
+                background-color:white;
+                border: 1px solid grey;
+            }
+
+            #checkOut .Ordertable{
+                border-collapse: collapse;
+                margin:25px 0;
+                font-size: 0.9em;
+            }
+        
+            .checkOut thead{
+                background-color: #808080;
+                color: white;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .Ordertable th,
+            .Ordertable td{
+                padding:20px;
+            }
+
+            .Ordertabletbody tbody tr{
+                border-bottom: 1px solid white;
+            }
+
+            .subtotal{
+                background-color: #f3f3f3;
+            }
+
+
+            .logo1 {
+                display: flex;
+                justify-content: center;
+            }
+
+
+            #checkOut .detail{
+                height: 450px;
+            }
+
+            #checkOut .orderdetail{
+                float:left;
+                width:45%;
+                margin-left:25px;
+                height: 100px;
+        
+            }
+
+            #checkOut .orderdetail_header{
+                font-size: 20px;
+                color: white;
+                font-weight: bold;
+                background-color: #808080;
+                margin-left:15px;
+                width: 416.18px;
+                padding: 10px;
+
+            }
+            #checkOut .orderdetail_table{
+                border-collapse: collapse;
+                margin-left:15px;
+                width: 416.18px;
+                font-size: 0.9em;
+                border: 1px solid grey;
+                text-align: left;
+                height: 200px;
+
+            }
+
+            #checkOut .orderdetail_table th,
+            #checkOut .orderdetail_table td{
+                padding: 12px 15px;
+            }
+
+            #checkOut .deliverydetail{
+                float:left;
+                width:45%;
+                margin-left:25px;
+                height: 125px;
+            }
+
+            #checkOut .deliverydetail_header{
+                font-size: 20px;
+                color: white;
+                font-weight: bold;
+                background-color: #808080;
+                margin-left:15px;
+                width: 415px;
+                padding: 10px;
+            }
+
+            #checkOut .deliverydetail_table{
+                border-collapse: collapse;
+                margin-left:15px;
+                width: 415px;
+                font-size: 0.9em;
+                border: 1px solid grey;
+                text-align: left;
+
+            }
+
+            #checkOut .deliverydetail_table th,
+            #checkOut .deliverydetail_table td{
+                padding: 12px 15px;
+            }
+
+           
+
+            #checkOut .deliverydetail_table2{
+                border-collapse: collapse;
+                margin-left:15px;
+                width: 415px;
+                font-size: 0.9em;
+                border: 1px solid grey;
+                text-align: left;
+
+            }
+
+           
+
+            #checkOut .deliverydetail_table2 th,
+            #checkOut .deliverydetail_table2 td{
+                padding: 12px 15px;
+            }
+
+
+
+            .agree_slot div{
+                margin-left: 300px;
+                width: 500px;
+                display: flex;
+
+            }
+            .submitBtn {
+                width: 300px;
+                height: 40px;
+                background-color:#99A799;
+                color: black;
+            }
+
+            .spanRequired{
+                color:red;
+            }
+          
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <div class="header_flexbox1">
+                <!-- <div class="lang">
+                    
+                   <select name="language">
+                       <option value="English" selected>English</option>
+                   </select>
+                
+                </div> -->
+
+            </div>
+            <div class="header_flexbox2">
+                <div class="img1">
+                    <a href="Mainpage.html"><img src="..\picture\logo.jpg" ></a>
+                </div>
+            </div>
+            <div class="header_flexbox3">
+                <div class="logo">
+                    <a href="login.html">
+                        <img src="..\picture\user-circle-regular-36.png" alt="loginIcon" height="30px">
+                        <span class="links_name">Login</span>
+                    </a>
+        
+                    <a href="shoppingCart.html">
+                        <img src="..\picture\cart-regular-36.png" alt="shoppingIcon" height="30px">
+                        <span class="links_name">Shopping Cart</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Mainpage.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="section1">
+            <div ><img class="img1" src="../picture/number1-in-circle.png" width="30px" height="30px">
+                <div>Shopping Cart</div>
+            </div>&rarr;
+            <div><img class="img2" src="../picture/number2-in-circle.png" width="30px" height="30px">
+                <div>Fill Information</div>
+            </div>&rarr;
+            <div><img class="img3" src="../picture/number3 in circle.png" width="30px" height="30px">
+                <div>Order Confirmation</div>
+            </div>
+        </div>
+
+        <!-- -------------------------------------------------------------------------------------------------------------------------------- -->
+        <div id="checkOut">
+            <div class="checkOut">
+               
+            
+            
+                <table class="Ordertable">
+                    <thead>
+                        <tr>
+                            <th>Product Information</th>
+                            <th>Promotions</th>
+                            <th>Unit Price</th>
+                            <th>QTY</th>
+                            <th>Subtotal</th>
+                
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="../picture/FunnelNeckCapeWoolSweater_ivory_1.JPG" width="107"; height="165";>
+                                <span class="productName">Funnel Neck Cape Wool Sweater</span>
+                                <span class="productColor">Ivory</span>
+                            </td>
+
+                            <td>
+                                <span class="promotionString"> Available Promotions : 10%off</span>
+            
+                            </td>
+                            <td>CAD$198</td>
+                            <td>quantity: 1</td>
+                            <td>CAD$198</td>  
+                        </tr>
+
+                        <tr class="subtotal">
+                                <td colspan="4">Discount Applied:</td>
+                                <td>-CAD$19.8</td>
+                        </tr>
+        
+                        <tr class="subtotal">
+                                <td colspan="4">Delivery Fee:</td>
+                                <td>CAD$20.0</td>
+                        </tr>
+
+                        <tr class="subtotal">
+                                <td colspan="4">Total:</td>
+                                <td>CAD$198.2</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <div class="logo1"><i>Already a member? Login for easier order tracking and faster checkout!</i></div><br>
+                <div class="logo1">
+                    <a href="login.html"><img src="../picture/loginlogo.PNG" height="45px"></a>
+                    <a target="_blank" href="https://www.facebook.com/"><img src="../picture/loginlogo2.PNG" height="45px"></a>
+                </div><br><br>
+
+                <div class="detail">
+                    <form name="checkoutForm" action="Order_confirmation.html" method="get" id="f1">
+
+                        
+                            <div class="orderdetail">
+                                <div class="orderdetail_header">Customer information</div>
+                                
+                                <table class="orderdetail_table">
+                                    <tr>
+                                        <td><label for="firstname">First name:</label><br>
+                                            <input type="text" name="fn" id="firstname" placeholder="First Name"  size="30"><span class="spanRequired" id="fnresult"></span></td>
+                                    
+                                    </tr>
+                        
+                                    <tr>
+                                        <td><label for="lastname">Last name:</label><br>
+                                            <input type="text" name="ln" id="lastname" placeholder="Last Name"  size="30"><span class="spanRequired" id="lnresult"></span><br><br></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><label for="phone">Enter your phone number:</label><br>
+                                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  size="30" placeholder="xxx-xxx-xxxx" ><span class="spanRequired" id="phonenum"></span></td>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <td><label for="age">Age (Optional):</label>
+                                            <input type="number" id="age" name="age" style="width:40px; margin-left: 10px;" >
+                                        </td>
+                                        
+                                    </tr>
+
+                                    <tr>
+                                        <td><span>Remarks for Shop</span><br><br>
+                                            <textarea name="remarks" cols="50" rows="5" placeholder="Leave order remarks for the shop"></textarea></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="deliverydetail">
+                                <div class="deliverydetail_header">Delivery Detail</div>
+                                
+                                <table class="deliverydetail_table">
+                                    
+                                    <tr>
+                                        
+                                        <td><input type="checkbox" name="recipient" value="recipent" id="rp">
+                                            <label for="rp">Recipient Info is the same as Customer Info</label></td>
+                                        
+                                    </tr>
+                        
+                                    <tr>
+                                        <td><label for="rp_name">Recipient Name:</label><br>
+                                            <input type="text" size="25"  id="rp_name" name="recipentName" placeholder="Please fill in recipient's full name"><span class="spanRequired" id="recipent"></span><br></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><label for="rp_phone">Recipient Contact Number:</label><br>
+                                            <input type="tel" id="rp_phone" name="recipientPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  size="25" placeholder="xxx-xxx-xxxx"><span class="spanRequired" id="recipentphone"></span></td>
+                                    
+                                    </tr>
+                                    
+                                </table>
+                            <br>
+                                <div class="deliverydetail_header">Address</div>
+                                <table class="deliverydetail_table2">
+                                    
+                                    <tr>
+                                        
+                                        <td><input type="text" name="recipientAddress" placeholder="Address" id="address"  size="20"><span class="spanRequired" id="addr"></span></td>
+                                        
+                                    </tr>
+                        
+                                    <tr>
+                                        <td><input type="text" name="recipientCity" placeholder="City" id="city" size="20"><span class="spanRequired" id="cityr"></span></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><input type="text" name="zip" placeholder="Zip/Postal Code" id="zip" size="10"><span class="spanRequired" id="zipr"></span></td>
+                                        <td><input type="text" name="province" placeholder="District/State/Province" id="province"><span class="spanRequired" id="provincer"></span></td>
+                                    </tr>
+                                    
+                                </table>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="agree_slot">
+                            <div>
+                                <input type="checkbox" name="agree1" id="a1" value="shopTerm"><label for="a1" style="margin-left:10px">I agree to the shop's Terms of Use and Privacy Policy</label><br>
+                                
+                            </div>
+                            <div>
+                                <input type="checkbox" name="agree2" id="a2" value="CreateYMKTid"> <label for="a2" style="margin-left:10px">Create an account with YMKT shop</label><br>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="agree3" id="a3" value="emailNotif"><label for="a3" style="margin-left:10px">Yes, send me email updates and promotions</label> <br><br>
+                            </div>
+                            
+                            <div>
+                                <input type="button"  value ="Submit" class="submitBtn" onclick="validate()">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>    
+        </div>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>Tel: +123 456 1234</li>
+                            <li>Email: info@dressedtothenight.com</li>
+                            <li><address>220 Yonge St. Toronto Canada</address></li>
+                            <li>Opening Hours : 10 am - 8 pm (Everyday)</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="Contact_Us.html">Contact</a></li>
+                            <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right">Privacy Policy | Terms and Conditions | 2018&copy;DressedToTheNines</div>
+        </footer>
+
+    </body>
+
+</html>

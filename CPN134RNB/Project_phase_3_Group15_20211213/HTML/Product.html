@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ShoppingMall</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../CSS/common.css">
+        <script type="text/javascript" src="../js/jquery.js"></script>
+        <script src="../js/product.js"></script>
+        <script type="text/javascript">
+        $("document").ready(function(){
+            //this is where youwrite jquery code
+            $("#sidebar").css({"background-color": "white","float":"left","border-right":"1px solid black","height":"450px","width":"200px","margin":"30px"});
+            $("#sidebar>.category_list").css("list-style-type","none");
+            $("#sidebar>.sidebar_title").css({"color":"#99A799","font-weight":"bold","font-size":"25px"});
+            $("#sidebar>.category_list>li").css({"margin":"10px","text-decoration":"none"});
+            $("#sidebar>.category_list>li>a").css("text-decoration","none");
+            $("#TOP h2").css({"color":"#99A799","margin-top":"10px","margin-bottom":"10px","margin-left":"100px","font-size":"30px","display":"flex","justify-content":"center","text-shadow":"2px 1px 3px black","text-align":"center","font-weight":"bold"});
+            $("#TOP .produce_list").css({"display":"flex","flex-wrap":"wrap","margin-top":"10px","margin-left":"200px","margin-bottom":"10px","font-size":"15px","min-height":"600px"});
+            $("#TOP a").css("text-decoration","none");
+            $("#TOP .produce_list>article").css({"margin-top":"50px","width":"300px","margin":"30px","text-align":"center"});
+            $("#TOP .produce_name").css({"margin-top":"10px","color":"#595959"});
+            $("#TOP .produce_price").css("color","#595959");
+            $("#TOP .produce_color").css("color","#595959");
+        });
+    </script>
+    </head>
+    <body id="wrap">
+        <header>
+            
+            <div class="header_flexbox1">
+                <!-- <div class="lang">
+                    
+                   <select name="language">
+                       <option value="English" selected>English</option>
+                   </select>
+                
+                </div> -->
+
+            </div>
+            <div class="header_flexbox2">
+                <div class="img1">
+                    <a href="Mainpage.html"><img src="..\picture\logo.jpg" ></a>
+                </div>
+            </div>
+            <div class="header_flexbox3">
+                <div class="logo">
+                    <a href="login.html">
+                        <img src="..\picture\user-circle-regular-36.png" alt="loginIcon" height="30px">
+                        <span class="links_name">Login</span>
+                    </a>
+        
+                    <a href="shoppingCart.html">
+                        <img src="..\picture\cart-regular-36.png" alt="shoppingIcon" height="30px">
+                        <span class="links_name">Shopping Cart</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Mainpage.html">Home</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                <li><a href="Contact_Us.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div id="sidebar">
+                    <div class="sidebar_title">Categories</div>
+                    <i class='bx bx-menu' id="btn"></i>     
+
+                <ul class="category_list">
+                    <li><input type="text" name="bx-search"  value="" placeholder="Search..."></li>
+                    <li><a href="Product.html"><span class="links_name">View All</span></a></li>
+                    <li><a href="Product.html"><span class="links_name">TOPS</span></a></li>
+                    <li><a href="Product.html"><span class="links_name">BOTTOMS</span></a></li>
+                    <li><a href="Product.html"><span class="links_name">OUTER</span></a></li>
+                    <li><a href="Product.html"><span class="links_name">ACCESSORIES</span></a></li>
+                    <li><a href="Product.html"><span class="links_name">ON SALE</span></a></li>
+                </ul>
+         </div>
+
+
+        <section id="TOP">
+        
+        <h2>TOPS</h2>
+        <div class="produce_list">
+            <article>
+                <a href="Product_FunnelNeckCapeWoolSweater.html">
+                <img src="..\picture\FunnelNeckCapeWoolSweater_mocha_1.jpg" alt="FunnelNeckCapeWoolSweater" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="215"; height="331";>
+                <div class="product_name">Funnel Neck Cape Wool Sweater</div>
+                <div class="product_price">$168</div>
+                <div class="product_color">2 Colours</div>
+                </a>
+            </article>
+            <article>
+                <a href="Product_FunnelNeckCapeWoolSweater.html">
+                <img src="..\picture\FunnelNeckCapeWoolSweater_ivory_1.jpg" alt="FunnelNeckCapeWoolSweater_ivory" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="215"; height="331";>
+                <div class="product_name">Funnel Neck Cape Wool Sweater</div>
+                <div class="product_price">$168</div>
+                <div class="product_color">2 Colours</div>
+                </a>
+            </article>
+            <article>
+                <a href="Product_FunnelNeckCapeWoolSweater.html">
+                <img src="..\picture\BasicCottonPlainTee.jpg" alt="BasicCottonPlainTee" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="215"; height="331";>
+                <div class="product_name">Basic Cotton Plain Tee</div>
+                <div class="product_price">$168</div>
+                <div class="product_color">2 Colours</div>
+                </a>
+            </article>
+            <article>
+                <a href="Product_FunnelNeckCapeWoolSweater.html">
+                <img src="..\picture\BasicCottonPlainTee.jpg" alt="BasicCottonPlainTee" onmouseover="bigImg(this)" onmouseout="normalImg(this)" width="215"; height="331";>
+                <div class="product_name">Basic Cotton Plain Tee</div>
+                <div class="product_price">$168</div>
+                <div class="product_color">2 Colours</div>
+                </a>
+            </article>
+        </div>
+
+        </section>
+            <!--footer-->
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li>Tel: +123 456 1234</li>
+                            <li>Email: info@dressedtothenight.com</li>
+                            <li><address>220 Yonge St. Toronto Canada</address></li>
+                            <li>Opening Hours : 10 am - 8 pm (Everyday)</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Get help</h4>
+                        <ul>
+                            <li><a href="Contact_Us.html">Contact</a></li>
+                            <li><a href="Shipping_and_Return_Policy.html">Shipping and Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right">Privacy Policy | Terms and Conditions | 2018&copy;DressedToTheNines</div>
+        </footer>
+    </body>
+</html>

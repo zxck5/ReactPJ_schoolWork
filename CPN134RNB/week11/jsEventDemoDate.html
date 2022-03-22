@@ -1,0 +1,38 @@
+<html>
+
+    <head>
+
+
+
+    </head>
+
+    <body>
+
+        <h1> Js demo </h1>
+
+        <p id="p1"> </p>
+
+        <p id="result"> </p>
+
+        
+
+        <script>
+            var myDate = new Date(); //creating the object of the date class
+            document.write("<br> Date is: " + myDate);
+            document.write("<br> Date using tostring: " + myDate.toDateString());
+            document.write("<br> Using get full year: " + myDate.getFullYear());
+            document.write("<br> Using get month: " + (myDate.getMonth()+1));
+            /*0 means january, 1= feb , 2 = March....*/
+            document.write("<br> Using get date: " + myDate.getDate());
+            document.write("<br> Using get hours: " + myDate.getHours());
+
+            document.write("<br> Using get minutes: " + myDate.getMinutes());
+            document.write("<br> Using get seconds: " + myDate.getSeconds());
+            document.write("<br> Using get day: " + myDate.getDay());
+            /*sunday = 0, monday = 1, tue = 2,.....*/
+            document.write("<br> Using get time: " + Date.now());
+        </script>    
+
+    </body>
+
+</html>        

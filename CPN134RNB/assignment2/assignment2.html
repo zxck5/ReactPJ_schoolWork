@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>About Me</title>
+        <meta name="author" content="Jiwon">
+        <meta name = "description" content="AboutMe">
+        <link rel="stylesheet" text="text/css" href="assignmentCSS.css">
+        <meta charset="UTF-8">
+        <style>
+            #assignment1{
+            width:1200px; height: 710px;  display: flex; background-color: lightskyblue;
+            border-left: 1px solid black ;
+            border-right: 1px solid black ; 
+            border-bottom: 1px solid black;
+    
+            }
+            #assignment1 > aside{
+                width: 500px; height: 700px;;
+                
+            }
+            #assignment1 aside .intro {font-size: 30px;  height: 50px; margin-left: 10px;}
+            #assignment1 aside .aside1 {margin-left: 30px; height: 50px;}
+
+            #assignment1 aside .aside2 {
+                height: 600px;
+                margin-top: 50px;
+                
+            }
+            #assignment1 aside .hobbies{
+                font-size: 30px;
+                font-weight: bold;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+            #assignment1 .aside2 .pictures {
+                display: flex;
+                justify-content:space-evenly;
+            }
+            #assignment1 .aside2 .para1 {
+                height: 300px;
+                margin-left: 10px;
+            }
+
+            #assignment1 > .contents{
+                width: 700px; height: 700px; 
+            
+            }
+            #assignment1 .contents .span1 {font-size: 30px; color: darkorange; text-align: center; }
+            #assignment1 .contents .contents_table{
+                display: flex;
+                justify-content: end;
+                
+            }
+
+
+        </style>
+
+    </head>
+    <body id="wrap">
+        <header>
+            <div class="title-span">
+                <span>About Me</span>
+            </div>
+        </header>
+        <nav>
+            <ul>
+               <li><a href="assignment2.html">Home</a></li>
+               <li><a href="assignment2_2.html">MyDreams</li>
+               <li><a href="">Contact</a></li>
+            </ul>
+           <hr>
+        </nav>
+        
+        <main id="assignment1">
+            <aside>
+                <div class="intro">
+                    <b>Intro:</b>
+                </div>
+                <div class="aside1">
+                    Hello my name is Jiwon Jeong, and I am from South Korea<br><br>
+                    I decided to study in Humber to be Java developer.
+                </div>
+                <div class="hobbies">
+                    <span>Hobbies:</span>
+                </div>
+
+                <div class="aside2">
+
+                    
+                    <div class="pictures">
+                        <div>
+                            <img src="picture/img1.jpg" alt="" height="300px">
+                        </div>
+                        <div>
+                            <img src="picture/img2.jpg" alt="" height="300px">
+                        </div>
+
+                    </div>
+                    <div class="para1">
+                        <p> &nbsp;&nbsp;&nbsp;My hobbies are playing piano and workout. For piano, I started practicing piano after the qurantine<br><br>
+                            &nbsp;&nbsp;&nbsp;During this period, there was basically nothing I can do except workout. So I started playing piano<br><br>
+                            &nbsp;&nbsp;&nbsp;until now. Moreover, I really enjoy doing workout and Inever gave any excuses for skipping a session.<br><br>
+                            &nbsp;&nbsp;&nbsp;  I did workout for 2years and a half.</p>
+                    </div>
+
+                </div>
+
+            </aside>
+            <section class="contents">
+                <div class="span1">
+                    <span>This is my schedule for a week</span><br><br>
+                </div>
+                <div class="contents_table">
+                    <table border="1">
+                        <tr>
+                            <th>Time/days</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                        <tr>
+                            <td>11am</td>
+                            <td rowspan="3" colspan="7">sleep</td>
+                        </tr>
+                        <tr><td>....</td></tr>
+                        <tr><td>5pm</td></tr>
+                        <tr>
+                            <td>6pm</td>
+                            <td colspan="7" rowspan="2">breakfast, stretching body, prepare for piano lesson</td>
+                        </tr>
+                        <tr>
+                            <td>7pm</td>
+                        </tr>
+                        <tr>
+                            <td>8pm</td>
+                            <td colspan="2" rowspan="3">practice piano</td>
+                            <td rowspan="2">piano<br> lesson</td>
+                            <td colspan="3" rowspan="3">practice piano</td>
+                            <td rowspan="2">piano<br> lesson</td>
+                        </tr>
+                        <tr>
+                            <td>9pm</td>
+                        </tr>
+                        <tr>
+                            <td>10pm</td>
+                            <td>rest<br>stretching<br> body</td>
+                            <td>rest<br>stretching<br> body</td>
+                        </tr>
+
+                        <tr>
+                            <td>11pm</td>
+                            <td colspan="7">Lunch</td>
+                        </tr>
+                        <tr>
+                            <td>12am</td>
+                            
+                            <td colspan="3" rowspan="3">study</td>
+                            <td>study</td>
+                            <td colspan="3" rowspan="3">study</td>
+                        </tr>
+                        <tr>
+                            <td>1am</td>
+                            <td rowspan="3">Web<br>Programming</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">2am</td>
+                        </tr>
+                        <tr>
+                        
+                            <td rowspan="2">ESOL</td>
+                            <td rowspan="2">DB&amp;Design</td>
+                            <td rowspan="2">ESOL</td>
+                            
+                            <td colspan="3">rest</td>
+                        </tr>
+                        <tr>    
+                            <td>3am</td>
+                            <td>rest&amp;<br>prepare<br>lecture</td>
+                            <td colspan="3">study</td>
+                        </tr>
+                        <tr>
+                            <td>4am</td>
+                            <td colspan="7">rest&amp;take some nap&amp;<strong><i>Eat some food before gym</i></strong> </td>
+                        </tr>
+                        <tr>
+                            <td>5am</td>
+                            <td rowspan="2">Fundamentals<br>of Numeric<br>Computing</td>
+                            <td rowspan="3">Gym</td>
+                            <td rowspan="2">Algorithms<br>and Problem<br>Solving</td>
+                            <td rowspan="2">Fundamentals<br>of Numeric<br>Computing</td>
+                            <td rowspan="3">Operating<br>System</td>
+                            <td colspan="2" rowspan="3">Gym</td>
+                        </tr>
+                        <tr>
+                            <td>6am</td>
+                        </tr>
+                        <tr>
+                            <td>7am</td>
+                            <td rowspan="3">Gym</td>
+                            <td rowspan="3" colspan="2">Gym</td>
+                        </tr>
+                        <tr>
+                            <td>8am</td>
+                            <td>Dinner</td>
+                            <td rowspan="2">Gym</td>
+                            <td colspan="2">Dinner</td>
+                        </tr>
+                        <tr>
+                            <td>9am</td>
+                            <td rowspan="2">study</td>
+                        
+                            <td colspan="2" rowspan="2">study</td>
+                        </tr>
+                        <tr>
+                            <td>10am</td>
+                            <td>Eat some food<br>&amp;study</td>
+                            <td colspan="3">eat some food<br>&amp;study</td>
+                        </tr>
+                        <tr>
+                            <td>11am</td>
+                            <td colspan="7">sleep</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <div class="address1">
+                    <span>Date issued: October 10<sup>th</sup><br></span>
+                    <span>&copy; Humber college</span><br>
+                </div>
+                <div>
+                    <span><b>Student number:N01476150</b></span>
+                </div>
+                
+                
+            </address>
+        </footer>
+
+        
+    </body>
+
+
+</html>
